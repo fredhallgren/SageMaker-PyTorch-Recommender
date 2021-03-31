@@ -56,7 +56,7 @@ class Recommender(nn.Module):
         return predictions
 
 
-    def get_dim(self):
+    def get_dim(self) -> int:
         """Getter for the hidden dimension (number of factors)
         """
         return self.factors.weight.shape[1]
@@ -70,7 +70,7 @@ class RatingsData(Dataset):
     The full matrix is not stored, only the supplied ratings, and
     rows of the matrix are created on-the-fly as needed
 
-    :param datapath: Path to the data csv file
+    :param data_directory: Directory where the data is stored
 
     """
     def __init__(self, data_directory: str):
@@ -87,11 +87,13 @@ class RatingsData(Dataset):
         self.groups  = groups
    
 
-    def __len__(self):
+    def __len__(self) -> int:
+        """Return number of users
+        """
         return len(self.users)
 
 
-    def get_dim(self):
+    def get_dim(self) -> int:
         """Getter for the matrix dimension (the number of items)
         """
         return len(self.items)
