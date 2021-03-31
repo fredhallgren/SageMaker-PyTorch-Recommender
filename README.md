@@ -49,7 +49,7 @@ AWS SageMaker is a complete solution for ML projects, including data labelling (
 
 A Sagemaker notebook is a Jupyter notebook running on AWS provisioned resources, and Sagemaker Studio is a JupyterLab instance, which is a wrapper around notebooks with additional functionality.
 
-You can launch SageMaker studio/notebooks in the AWS console as described at: [https://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html].
+You can launch SageMaker studio/notebooks in the AWS console as described at: https://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html.
 
 
 ## Future functionality
