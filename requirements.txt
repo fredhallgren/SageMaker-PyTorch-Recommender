@@ -1,6 +1,7 @@
 
 pandas
 jupyter
+scikit-learn
 boto3 
 sagemaker
 torch

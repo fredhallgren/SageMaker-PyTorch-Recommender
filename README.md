@@ -35,6 +35,7 @@ Tested on Ubuntu 20.04.
 
 * pandas
 * jupyter
+* scikit-learn
 * boto3
 * sagemaker
 * torch
